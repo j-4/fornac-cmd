@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <link rel='stylesheet' type='text/css' href='css/fornac.css' />
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/d3.js'></script>
+</head>
+<body>
+
+This is an RNA container.
+<div id='rna_ss'> </div>
+This after the RNA container.
+
+    <script type='text/javascript' src='js/fornac.js'></script>
+    <script type='text/javascript'>
+        var container = new fornac.FornaContainer("#rna_ss", 
+            {'applyForce': true, 'allowPanningAndZooming': true, 'initialSize':[500,500],
+                  'friction': 0.35,
+                  'middleCharge': -30,
+                  'otherCharge': -30,
+                  'linkDistanceMultiplier': 15,
+                  'chargeDistance': 110
+            } 
+        );
+
+        var options = {'structure': '((..((....)).(((....))).))',
+                        'sequence': 'CGCUUCAUAUAAUCCUAAUGACCUAU'
+        };
+        container.addRNA(options.structure, options);
+    </script>
+</body>
+</html>
