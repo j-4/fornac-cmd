@@ -1,9 +1,0 @@
-# first install phantomjs
-
-npm install phantomjs
-
-# then run
-
-phantomjs generator.js
-
-# this outputs the svg after a certain rendering time to stdout
