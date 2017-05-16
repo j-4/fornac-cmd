@@ -14,6 +14,6 @@ npm install phantomjs
 ## Usage
 
 ```bash
-phantomjs generator.js > plot.svg
+phantomjs generator.js "CGCUUCAUAUAAUCCUAAUGACCUAU" "((..((....)).(((....))).))" > plot.svg
 ```
 This outputs the svg file after a certain rendering time to the specified destination.
